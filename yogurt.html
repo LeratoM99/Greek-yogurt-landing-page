@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Yogurt</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+            font-family: Arial, sans-serif;
+        }
+
+        div.container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: teal;
+            font-weight: bold;
+        }
+
+        h2 {
+            text-align: center;
+            border: 1px solid black;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 4px;
+            font-weight: normal;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 90%;
+            border-radius: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 14px;
+            margin: 20px 0;
+        }
+
+        span.highlight {
+            color: darkcyan;
+            font-weight: bold;
+        }
+
+        strong {
+            color: darkblue;
+        }
+
+        em {
+            color: gray;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 1px solid lightgray;
+        }
+
+        a.learn-more {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: green;
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        a.learn-more:hover {
+            text-decoration: underline;
+            color: darkgreen;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: lightblue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: deepskyblue;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>I love Greek Yogurt</h1>
+        <h2>It's so creamy and delicious!</h2>
+
+        <hr>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjGPkYTztY8W0W6JtvXPjnTFZ4kgq0bNhf8Q&s"
+            alt="Greek yogurt">
+
+        <p>
+            <strong>Greek yogurt</strong> is a <em>strained yogurt</em> that has been
+            strained to remove most of its whey, resulting in a
+            <span class="highlight">thicker consistency</span>
+            than normal yogurt.
+            <br>
+            It still preserves the distinctive sour taste.
+        </p>
+
+        <a href="https://thegourmetgreek.com/1264-2/" target="_blank" class="learn-more" rel="noopener noreferrer">
+            Learn more on The Gourmet Greek
+        </a>
+
+        <button>Click Me!</button>
+
+        <footer>This page was done by Lerato Motaung</footer>
+
+    </div>
+
+    <script>
+
+        let button = document.querySelector("button");
+
+        button.addEventListener("click", function () {
+
+            let name = prompt("What is your name?");
+
+            if (name === null || name.trim() === "") {
+                alert("You didn't enter your name!");
+            } else {
+                alert("Hello, " + name + "! Welcome to the world of Greek yogurt!");
+            }
+
+            let emoji = prompt("What is your favorite emoji?");
+
+            if (emoji === null || emoji.trim() === "") {
+                alert("No emoji? That's okay!");
+            } else {
+                alert("Great choice! " + emoji + " is perfect for Greek yogurt!");
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
